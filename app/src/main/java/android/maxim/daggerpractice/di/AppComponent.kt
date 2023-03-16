@@ -6,6 +6,9 @@ import dagger.Component
 
 @Component(modules = [StorageModule::class, NetworkModule::class])
 interface AppComponent {
+
     fun getDatabaseHelper(): DatabaseHelper
+
     fun getNetworkUtils(): NetworkUtils
+
 }
